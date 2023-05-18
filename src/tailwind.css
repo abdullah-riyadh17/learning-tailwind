@@ -1,16 +1,23 @@
-@tailwind base;
-@tailwind components;
+/* @tailwind base;
+@tailwind components;  */
 @tailwind utilities;
 
-/* @variants hover, focus {
-  .rotate-0 {
-    tranform: rotate(0deg);
+/* @responsive {
+  .bg-gradient-brand {
+    background-image: linear-gradient(blue, green);
   }
 } */
-/* The `@variants` directive has been deprecated in Tailwind CSS v3.0. */
-/*  Use `@layer utilities` or `@layer components` instead. */
+/* The `@responsive` directive has been deprecated in Tailwind CSS v3.0. */
+/* Use `@layer utilities` or `@layer components` instead. */
 @layer utilities {
-  .text-color {
-    color: blue;
+  .bg-gradient-brand {
+    background-image: linear-gradient(blue, green);
+    @apply text-white;
+  }
+}
+@screen sm {
+  .bg-gradient-brand {
+    background-image: linear-gradient(red, green);
+    @apply text-black;
   }
 }
