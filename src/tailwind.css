@@ -11,6 +11,6 @@
 /*  Use `@layer utilities` or `@layer components` instead. */
 @layer utilities {
   .text-color {
-    color: red;
+    color: blue;
   }
 }
