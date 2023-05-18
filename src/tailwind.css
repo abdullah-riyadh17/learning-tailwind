@@ -1,23 +1,21 @@
 /* @tailwind base;
-@tailwind components;  */
-@tailwind utilities;
-
-/* @responsive {
-  .bg-gradient-brand {
-    background-image: linear-gradient(blue, green);
-  }
-} */
-/* The `@responsive` directive has been deprecated in Tailwind CSS v3.0. */
-/* Use `@layer utilities` or `@layer components` instead. */
-@layer utilities {
-  .bg-gradient-brand {
-    background-image: linear-gradient(blue, green);
-    @apply text-white;
-  }
+@tailwind components; 
+@tailwind utilities; */
+.content-area {
+  height: calc(100vh - theme(spacing.12));
 }
-@screen sm {
-  .bg-gradient-brand {
-    background-image: linear-gradient(red, green);
-    @apply text-black;
-  }
+.content-area {
+  height: calc(100vh - theme(spacing[2.5]));
+}
+.btn-blue {
+  background-color: theme(colors.blue.500);
+}
+@media screen(sm) {
+  /* ... */
+}
+@media screen(lg) {
+  /* ... */
+}
+.btn-blue {
+  background-color: theme(colors.blue.500 / 75%);
 }

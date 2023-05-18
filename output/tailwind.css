@@ -1,34 +1,24 @@
 /* @tailwind base;
-@tailwind components;  */
+@tailwind components; 
+@tailwind utilities; */
 
-.bg-gradient-brand {
-  background-image: linear-gradient(blue, green);
-  --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity));
+.content-area {
+  height: calc(100vh - 3rem);
+  height: calc(100vh - 0.625rem);
 }
 
-/* @responsive {
-  .bg-gradient-brand {
-    background-image: linear-gradient(blue, green);
-  }
-} */
-
-/* The `@responsive` directive has been deprecated in Tailwind CSS v3.0. */
-
-/* Use `@layer utilities` or `@layer components` instead. */
+.btn-blue {
+  background-color: #3b82f6;
+}
 
 @media (min-width: 640px) {
-  .bg-gradient-brand {
-    background-image: linear-gradient(red, green);
-    --tw-text-opacity: 1;
-    color: rgb(0 0 0 / var(--tw-text-opacity));
-  }
+  /* ... */
 }
 
-@media (min-width: 768px) {
-  .md\:bg-gradient-brand {
-    background-image: linear-gradient(blue, green);
-    --tw-text-opacity: 1;
-    color: rgb(255 255 255 / var(--tw-text-opacity));
-  }
+@media (min-width: 1024px) {
+  /* ... */
+}
+
+.btn-blue {
+  background-color: rgb(59 130 246 / 75%);
 }
